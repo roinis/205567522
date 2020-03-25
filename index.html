@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="keywords" content="Webpage, design, HTML, personal">
+
+    <meta name="description" content="This Web site will describe
+    the properties of a person.">
+
+    <title>My page</title>
+    <link href="Task1.css" rel="stylesheet" type="text/css">>
+       
+</head>
+
+
+<body style = "padding-top: 100px;">
+    <header>
+        <div class="container" align="center">
+            <img src="logo.png" alt="my logo"  class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#aboutme">About me</a></li>
+                    <li><a href="#myphotos">My Photos</a></li>
+                    <li><a href="#playlist">My Playlist</a></li>
+                    <li><a href="#qrcode">Like</a></li>
+                    <li><a href="#questions">QR Code</a></li>
+                    <li><a href="#mail">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id ="aboutme" align="center" class="link">
+        <h1  >About Me</h1>
+        <p >
+            My name is Eran Tagansky, I'm 20 years old and originally from Rishon Lezion.<br>
+            I am a third year student in the Information Systems Engeneering department in Ben Gurion University.<br>
+            My hobbies are Learning about the world, cooking, watching series and playing and being with my friends.<br>
+            My expectation from this course are very high and I  want to learn many intresting things and don't work too much about exhausting css files.<br>
+        </p> <br><br><br>     
+    </div>
+    <div align="center" id ="myphotos" class="link">
+        <h1  >My Photos</h1>
+        <img src="pics/1.jpg" alt="1" class="a">
+        <img src="pics/2.jpg" alt="2" class="a">
+        <img src="pics/3.jpg" alt="3" class="a">
+        <img src="pics/4.jpg" alt="4" class="a"> 
+    </div>
+
+    <div align="center"  id ="playlist" class="link">
+        <h1 >My Playlist</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-W3cwsBxmmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+    <div align="center"  id ="qrcode" class="link">
+        <h1 id ="qrcode">Scan QR Code</h1>        
+    </div>
+    <div id ="questions" class="link">
+        <h1  align="center">Q&A</h1>
+        <ol type=“I” >
+            <li > Web1.0 has some limited interactions and ability between the website and the user.<br> 
+                It works just as an information portal to the viewers or clients without engaging them or having any sort of interactions</li>	
+            <br>
+            <li>Web2.0's are the interactive data writable platform where there's a facility for the website to interact with their users or clients.<br>
+                It is being the famous and favourite platforms for both the website owners as well as the clients to interact with each others regarding the feedback of the product.</li>
+            <br>
+            <li>Web3.0 is an executable phrase of WWW with dynamic applications, interactive services and machine interaction languages.<br>
+                 Web3.0 are a semntic web that actually is referring to the future.<br>
+                 Web3.0 allows computers to interpret information, generate and distribute the useful content to the users just like the humans do.</li>
+        </ol>
+        <br><br><br><br> 
+         
+    </div>  
+    <div align="center" id ="contact" class="link">
+        <h1 id ="mail">Contact Me</h1>
+        <form>
+            <label for="fname">Mail Address:</label><br>
+            <input type="text" id="fname" name="fname" ><br><br>
+            <label for="lname">Subject:</label><br>
+            <input type="text" id="lname" name="lname"><br><br><br>
+            <h3>Mail Content:</h3>
+            <textarea id="w3mission" rows="10" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit" style="width: 100px;height: 30px;font-size: large;">
+        </form>
+    </div>
+
+</body>
+
+
+</html>
