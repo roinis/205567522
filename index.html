@@ -89,25 +89,33 @@
     </div>  
     <div align="center" id ="contact" class="link">
         <h1 id ="mail">Contact Me</h1>
-        <form>
-            <label for="fname">Mail Address:</label><br>
-            <input type="text" id="fname" name="fname" ><br><br>
-            <label for="lname">Subject:</label><br>
-            <input type="text" id="lname" name="lname"><br><br><br>
-            <h3>Mail Content:</h3>
-            <div align="center">
-                <textarea id="w3mission" rows="10" cols="50"></textarea>
-                <select id="emojis">
-                    <option value="	GRINNING FACE">&#128512;</option>
-                    <option value="TEARS OF JOY">&#128514;</option>
-                    <option value="OPEN MOUTH">&#128515;</option>
-                    <option value="COLD SWEAT">&#128517;</option>
-                </select><br><br>
-            </div>
+        <form action="mailto:fake@gmail.com?subject=Contact Me" method=post enctype="text/plain">
+            <label for="My Mail">Mail Address:</label><br>
+            <input type="text" id="My Mail" name="My Mail" ><br><br>
+            <label for="Subject">Subject:</label><br>
+            <input type="text" id="Subject" name="Subject"><br><br><br>
+            <h3>Mail Content:</h3>         
+            <textarea id="content" rows="10" cols="50" name="content"></textarea>
+            <select id="emojis" onchange="addEmonjiToContent()">
+                <option value=" " name="0">None</option>
+                <option value="&#128512" name="1">&#128512;</option>
+                <option value="&#128514" name="2"> &#128514;</option>
+                <option value="&#128515" name="3">&#128515;</option>
+                <option value="&#128517" name="4">&#128517;</option>
+            </select><br><br>         
+            
+            <script>
+                function addEmonjiToContent(){
+                    let emonji = document.getElementById("emojis");
+                    let selectEmoji = emonji.options[emonji.selectedIndex].value;
+                   
+                    document.getElementById("content").value += selectEmoji
+                }            
+            </script>
             <input type="submit" value="Submit" style="width: 100px;height: 30px;font-size: large;">
-        
         </form>
     </div>
+    
 
 </body>
 
